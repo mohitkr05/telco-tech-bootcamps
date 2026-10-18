@@ -1,0 +1,17 @@
+site_name: Telecom Bootcamp
+site_author: Mohit Kumar
+site_description: "Publicly shareable notes for Telecom Bootcamp"
+repo_url: https://github.com/mohitkr05/TelcoBootcamp
+theme:
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: dracula
+  highlightjs: true
+  disable_footer: false
+  # Turn off the default footer message, but display the page revision date if it's available
+  disable_footer_except_revision: true
+  hljs_languages:
+    - yaml
+
+markdown_extensions:
+  - admonition

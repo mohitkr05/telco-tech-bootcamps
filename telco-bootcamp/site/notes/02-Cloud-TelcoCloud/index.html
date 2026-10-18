@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publicly shareable notes for Telecom Bootcamp">
+    <meta name="author" content="Mohit Kumar">
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Cloud Computing & Telco Cloud - Telecom Bootcamp</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/dracula.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Telecom Bootcamp</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Telecom Boot Camp</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Excercises <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../excercises/01-preparation/">System preparation</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../excercises/02-linux-shellscripting/">Linux and Shell scripting</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../excercises/03-git-handson/">Git Hands on</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../excercises/04-vm-handson/">Virtual Machine Hands-on</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../excercises/Cloud-TelcoCloud/">Cloud TelcoCloud</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Notes <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../01-introduction-telecom/">Day 1</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Cloud Computing & Telco Cloud</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../03-linux/">Linux</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../04-linux-networking/">Linux networking explained</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../05-git/">Git & GitOps for Telecom Engineers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../cloud-services/">Cloud services</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../containers/">Containers</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../shellscripting/">Shell Scripting 101</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Virtualization</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../virtualization/06-virtualization/">Virtualization</a>
+</li>
+
+        
+            
+<li >
+    <a href="../virtualization/DPDK/">DPDK & SR-IOV</a>
+</li>
+
+        
+            
+<li >
+    <a href="../virtualization/NFVI/">Network function virtualization</a>
+</li>
+
+        
+            
+<li >
+    <a href="../virtualization/Openstack/">Openstack</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../01-introduction-telecom/">
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="../03-linux/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mohitkr05/TelcoBootcamp/edit/master/docs/notes/02-Cloud-TelcoCloud.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#cloud-computing-telco-cloud">Cloud Computing &amp; Telco Cloud</a></li>
+            <li class="second-level"><a href="#checklist-for-today">Checklist for today</a></li>
+                
+            <li class="second-level"><a href="#what-we-are-trying-to-achieve">What we are trying to achieve</a></li>
+                
+            <li class="second-level"><a href="#understanding-cloud-computing">Understanding Cloud Computing</a></li>
+                
+                <li class="third-level"><a href="#definition-of-cloud-computing">Definition of Cloud computing</a></li>
+                <li class="third-level"><a href="#challenges-and-benefits-for-cloud-computing">Challenges and benefits for Cloud Computing</a></li>
+            <li class="second-level"><a href="#brief-overview-of-telco-cloud">Brief overview of Telco Cloud</a></li>
+                
+                <li class="third-level"><a href="#telco-cloud-overview">Telco Cloud Overview:</a></li>
+                <li class="third-level"><a href="#architecture">Architecture:</a></li>
+                <li class="third-level"><a href="#foundation">Foundation:</a></li>
+                <li class="third-level"><a href="#abstraction-layer">Abstraction Layer:</a></li>
+                <li class="third-level"><a href="#network-functions">Network Functions:</a></li>
+                <li class="third-level"><a href="#software-automation">Software &amp; Automation:</a></li>
+                <li class="third-level"><a href="#orchestration-intelligence">Orchestration &amp; Intelligence</a></li>
+                <li class="third-level"><a href="#quality-of-service-qos-management">Quality of Service (QoS) Management:</a></li>
+            <li class="second-level"><a href="#linux-and-open-source">Linux and Open source</a></li>
+                
+                <li class="third-level"><a href="#introduction">Introduction:</a></li>
+                <li class="third-level"><a href="#key-opensource-events">Key Opensource events</a></li>
+                <li class="third-level"><a href="#open-source-philosophy">Open Source Philosophy</a></li>
+                <li class="third-level"><a href="#linux">Linux</a></li>
+                <li class="third-level"><a href="#key-features-of-linux">Key Features of Linux:</a></li>
+                <li class="third-level"><a href="#community-collaboration">Community Collaboration:</a></li>
+                <li class="third-level"><a href="#impact-on-computing">Impact on Computing:</a></li>
+            <li class="second-level"><a href="#open-source-in-telecom">Open source in Telecom</a></li>
+                
+                <li class="third-level"><a href="#key-open-source-projects-in-telecom">Key Open Source Projects in Telecom</a></li>
+                <li class="third-level"><a href="#impact-of-open-source-on-telecom">Impact of Open Source on Telecom</a></li>
+            <li class="second-level"><a href="#using-git-and-github">Using Git and Github</a></li>
+                
+            <li class="second-level"><a href="#setting-up-your-dev-environment-using-a-vm">Setting up your dev environment using a VM</a></li>
+                
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h1 id="cloud-computing-telco-cloud">Cloud Computing &amp; Telco Cloud</h1>
+<h2 id="checklist-for-today">Checklist for today</h2>
+<ul>
+<li>[ ] Understanding Cloud Computing </li>
+<li>[ ] Brief overview of Telco Cloud</li>
+<li>[ ] Linux and Open source</li>
+<li>[ ] Open source in Telecom</li>
+<li>[ ] Overview of the lectures and course platform</li>
+<li>[ ] Using Git and Github</li>
+<li>[ ] Setting up your dev environment using a VM</li>
+<li>[ ] Linux hands on exercise</li>
+</ul>
+<h2 id="what-we-are-trying-to-achieve">What we are trying to achieve</h2>
+<p><img alt="Target architecture" src="../../assets/architecture-setup.drawio.png" /></p>
+<h2 id="understanding-cloud-computing">Understanding Cloud Computing</h2>
+<h3 id="definition-of-cloud-computing">Definition of Cloud computing</h3>
+<p>Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared
+pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that
+can be rapidly provisioned and released with minimal management effort or service provider interaction.
+This cloud model is composed of five essential characteristics, three service models, and four deployment
+models [1]</p>
+<h4 id="essential-characteristics">Essential Characteristics</h4>
+<ul>
+<li><strong>On-demand self-service</strong>. A consumer can unilaterally provision computing capabilities, such as server time and network storage, as needed automatically without requiring human interaction with each service provider.</li>
+<li><strong>Broad network access</strong>. Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations).</li>
+<li><strong>Resource pooling</strong>. The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model, with different physical and virtual resources dynamically assigned and reassigned according to consumer demand. There is a sense of location independence in that the customer generally has no control or knowledge over the exact location of the provided resources but may be able to specify location at a higher level of abstraction (e.g., country, state, or datacenter). Examples of resources include storage, processing, memory, and network bandwidth.</li>
+<li><strong>Rapid elasticity</strong>. Capabilities can be elastically provisioned and released, in some cases automatically, to scale rapidly outward and inward commensurate with demand. To the consumer, the capabilities available for provisioning often appear to be unlimited and can be appropriated in any quantity at any time.</li>
+<li><strong>Measured service</strong>. Cloud systems automatically control and optimize resource use by leveraging a metering capability1 at some level of abstraction appropriate to the type of service (e.g.,storage, processing, bandwidth, and active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service</li>
+</ul>
+<h4 id="service-models">Service Models</h4>
+<ul>
+<li><strong>Software as a Service (SaaS)</strong>. The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure2. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a program interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings.</li>
+<li>
+<p><strong>Platform as a Service (PaaS)</strong>. The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages, libraries, services, and tools supported by the provider.3 The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly configuration settings for the application-hosting environment.</p>
+</li>
+<li>
+<p><strong>Infrastructure as a Service (IaaS)</strong>. The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications; and possibly limited control of select networking components (e.g., host firewalls).</p>
+</li>
+</ul>
+<h4 id="deployment-models">Deployment Models</h4>
+<ul>
+<li>
+<p><strong>Private cloud</strong>. The cloud infrastructure is provisioned for exclusive use by a single organization  comprising multiple consumers (e.g., business units). It may be owned, managed, and operated by the organization, a third party, or some combination of them, and it may exist
+on or off premises. </p>
+</li>
+<li>
+<p><strong>Community cloud</strong>. The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be owned, managed, and operated by one or more of the organizations in the community, a third party, or some combination of them, and it may exist on or off premises.</p>
+</li>
+<li>
+<p><strong>Public cloud</strong>. The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider.</p>
+</li>
+<li>
+<p><strong>Hybrid cloud</strong>. The cloud infrastructure is a composition of two or more distinct cloud infrastructures (private, community, or public) that remain unique entities, but are bound together by standardized or proprietary technology that enables data and application
+portability (e.g., cloud bursting for load balancing between clouds)</p>
+</li>
+</ul>
+<h3 id="challenges-and-benefits-for-cloud-computing">Challenges and benefits for Cloud Computing</h3>
+<ul>
+<li>References <a href="https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-145.pdf">1</a></li>
+</ul>
+<h2 id="brief-overview-of-telco-cloud">Brief overview of Telco Cloud</h2>
+<h3 id="telco-cloud-overview">Telco Cloud Overview:</h3>
+<ul>
+<li>Telco cloud empowers service providers to operate networks like a cloud.</li>
+<li>Facilitates agile and efficient creation and deployment of services.</li>
+</ul>
+<h3 id="architecture">Architecture:</h3>
+<ul>
+<li>Telco cloud architectures seamlessly connect public, private, and edge cloud infrastructure.</li>
+<li>Enables DevOps-managed environments for digital service providers.</li>
+</ul>
+<h3 id="foundation">Foundation:</h3>
+<ul>
+<li>Built on a network functions virtualization (NFV)–enabled platform.</li>
+<li>This platform, also known as telco cloud infrastructure, serves as the foundation.</li>
+</ul>
+<h3 id="abstraction-layer">Abstraction Layer:</h3>
+<ul>
+<li>Creates an abstraction layer for the telco network.</li>
+<li>Incorporates modern hardware resources.</li>
+</ul>
+<h3 id="network-functions">Network Functions:</h3>
+<ul>
+<li>Supports modular cloud-native network functions (CNFs).</li>
+<li>Also accommodates virtualized network functions (VNFs).</li>
+</ul>
+<h3 id="software-automation">Software &amp; Automation:</h3>
+<ul>
+<li>Establishes a software foundation for creating and delivering next-generation services.</li>
+<li>This foundation requires automated orchestration to effectively manage CNFs and VNFs across all software-defined resources.</li>
+<li>Eliminates error-prone human activities, such as service provisioning.</li>
+<li>Reduces complexity and optimizes overall resource utilization.</li>
+</ul>
+<h3 id="orchestration-intelligence">Orchestration &amp; Intelligence</h3>
+<ul>
+<li>Telco cloud automation oversees service life cycles across various clouds:</li>
+<li>Network cloud</li>
+<li>Hybrid cloud</li>
+<li>Edge cloud</li>
+<li>IT cloud (Software-Defined Data Center, or SDDC)</li>
+<li>Ensures integrated and consistent management.</li>
+<li>The last layer of a telco cloud is the intelligence layer.</li>
+<li>Focuses on service assurance and root-cause analysis.</li>
+</ul>
+<h3 id="quality-of-service-qos-management">Quality of Service (QoS) Management:</h3>
+<ul>
+<li>Telco cloud automation is responsible for instantiating and delivering services.</li>
+<li>It seamlessly meets different Quality of Service (QoS) requirements across network resources.</li>
+</ul>
+<h2 id="linux-and-open-source">Linux and Open source</h2>
+<h3 id="introduction">Introduction:</h3>
+<p>Linux, an open-source operating system kernel, has become synonymous with the broader ethos of open source software development. Developed by Linus Torvalds in 1991, Linux represents a collaborative and community-driven approach to software creation. This operating system has not only revolutionized the landscape of computing but has also become a symbol of the open-source movement.</p>
+<h3 id="key-opensource-events">Key Opensource events</h3>
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Achievements</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1960s</td>
+<td>Development of the Multics operating system</td>
+<td>Multics laid the foundation for many of the concepts used in Unix, including the hierarchical file system, process forking, and inter-process communication.</td>
+</tr>
+<tr>
+<td>1970s</td>
+<td>Creation of Unix by Ken Thompson and Dennis Ritchie at Bell Labs</td>
+<td>Unix became the dominant operating system for workstations and servers in the 1980s and 1990s.</td>
+</tr>
+<tr>
+<td>1983</td>
+<td>Release of the GNU General Public License (GPL) by Richard Stallman</td>
+<td>The GPL is a widely used open-source software license that requires all derivatives of the software to be released under the same license.</td>
+</tr>
+<tr>
+<td>1991</td>
+<td>Release of Linux by Linus Torvalds</td>
+<td>Linux is a free and open-source operating system that has become the dominant operating system for web servers and embedded devices.</td>
+</tr>
+<tr>
+<td>1998</td>
+<td>Apache Software Foundation</td>
+<td>The Apache Software Foundation is a non-profit organization that operates the development and maintenance of the open-source web server software Apache HTTP Server.</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>Mozilla Foundation</td>
+<td>The Mozilla Foundation is a non-profit organization that operates the development and maintenance of the open-source web browser Mozilla Firefox.</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>Linux Foundation</td>
+<td>The Linux Foundation is a non-profit organization that promotes and develops the Linux operating system.</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>Open Source Initiative (OSI)</td>
+<td>The Open Source Initiative is a non-profit organization that promotes and develops open-source software.</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>Release of the first Android smartphone</td>
+<td>Android is a free and open-source mobile operating system that is based on the Linux kernel.</td>
+</tr>
+<tr>
+<td>2014</td>
+<td>Release of the first smartwatch with Google Wear</td>
+<td>Google Wear is a free and open-source operating system for smartwatches that is based on the Linux kernel.</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>Release of the first Chromebook with Google Chrome OS</td>
+<td>Chrome OS is a free and open-source operating system for Chromebooks that is based on the Linux kernel.</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>Release of the first Raspberry Pi with a Linux operating system</td>
+<td>The Raspberry Pi is a small, inexpensive computer that has been very popular for education and hobbyists.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="open-source-philosophy">Open Source Philosophy</h3>
+<p>At its core, the open-source philosophy emphasizes transparency, collaboration, and the free exchange of ideas. Unlike proprietary software, open-source software allows users to view, modify, and distribute the source code. This not only promotes innovation but also empowers a global community of developers to contribute to the improvement of software, fostering a culture of shared knowledge.</p>
+<h3 id="linux">Linux</h3>
+<p>Linux is an open-source operating system kernel that has played a transformative role in the world of computing. Originally created by Linus Torvalds in 1991, Linux has grown into a versatile and powerful platform known for its stability, security, and customization options. It is a Unix-like operating system, and its source code is freely available to the public, adhering to the principles of the open-source software development model.</p>
+<p>The impact of Linux extends across various domains, from servers and embedded systems to desktop environments. Renowned for its stability, Linux is a preferred choice for mission-critical systems and servers. Its open nature allows users to view, modify, and distribute the source code, fostering a collaborative community of developers and contributors worldwide.</p>
+<p>Linux has also influenced other projects and initiatives. The Linux Foundation, established in 2005, is a non-profit organization that promotes the development of the Linux operating system and provides support for open-source projects. Linux's kernel serves as the foundation for Android, the widely used mobile operating system, showcasing its adaptability.</p>
+<p>For more detailed information, you can refer to the Wikipedia page on Linux, where you will find comprehensive insights into its history, development, features, and the broader ecosystem it has influenced.</p>
+<h3 id="key-features-of-linux">Key Features of Linux:</h3>
+<ul>
+<li>Stability and Reliability: Linux is renowned for its stability, making it a preferred choice for servers and critical systems.</li>
+<li>Security: Open source allows for constant scrutiny, making Linux a secure platform with rapid responses to vulnerabilities.</li>
+<li>Customizability: Users can tailor Linux distributions to suit specific needs, from lightweight systems to robust server configurations.</li>
+</ul>
+<h3 id="community-collaboration">Community Collaboration:</h3>
+<p>The collaborative nature of open source is exemplified in the vast community of developers, contributors, and users working together to enhance Linux. Online forums, mailing lists, and collaborative platforms foster a sense of shared responsibility, where feedback and improvements come from a diverse pool of individuals.</p>
+<h3 id="impact-on-computing">Impact on Computing:</h3>
+<p>Linux has permeated various domains, from servers and embedded systems to desktop environments. Android, a widely used mobile operating system, is built on the Linux kernel. Additionally, Linux powers a significant portion of internet servers, contributing to the robustness of the World Wide Web.</p>
+<h2 id="open-source-in-telecom">Open source in Telecom</h2>
+<p>The telecommunications industry has witnessed a remarkable transformation in recent years, driven by the adoption of open-source technologies. This shift has brought about significant benefits, including increased flexibility, reduced costs, and enhanced interoperability. Open-source software has empowered telecom operators to break free from vendor lock-in and embrace a more collaborative approach to innovation.</p>
+<h3 id="key-open-source-projects-in-telecom">Key Open Source Projects in Telecom</h3>
+<p>Several open-source projects have played a pivotal role in shaping the telecom landscape. These projects have fostered a vibrant community of developers and contributors, leading to the development of robust and scalable solutions. Here are a few notable examples:</p>
+<ul>
+<li>
+<p><strong>OPNFV (Open Platform for NFV)</strong>: OPNFV is an open-source platform that facilitates the deployment and management of Network Functions Virtualization (NFV) solutions. It provides a standardized framework for orchestrating and managing virtual network functions (VNFs) and NFV infrastructure.</p>
+</li>
+<li>
+<p><strong>ONAP (Open Network Automation Platform)</strong>: ONAP is an open-source platform that automates the lifecycle management of telecom networks. It covers a wide range of network functions, including service provisioning, configuration, and performance monitoring.</p>
+</li>
+<li>
+<p><strong>FRRouting (FRR)</strong>: FRRouting is an open-source routing protocol suite that provides a comprehensive set of routing protocols for various network environments. It supports a wide range of routing technologies, including BGP, OSPF, and ISIS.</p>
+</li>
+<li>
+<p><strong>OpenDaylight (ODL)</strong>: OpenDaylight is an open-source SDN (Software-Defined Networking) controller that provides a platform for managing network resources through software. It enables network operators to centrally manage and control their network infrastructure, improving agility and efficiency.</p>
+</li>
+<li>
+<p><strong>OpenRAN (Open Radio Access Network)</strong>: OpenRAN is an open-source initiative that promotes the development and deployment of interoperable and open-source software for radio access networks (RANs). It aims to reduce vendor lock-in and foster innovation in the RAN segment.</p>
+</li>
+</ul>
+<h3 id="impact-of-open-source-on-telecom">Impact of Open Source on Telecom</h3>
+<p>The adoption of open-source technologies has had a profound impact on the telecom industry. Here are some of the key benefits:</p>
+<ul>
+<li>Increased Flexibility and Agility: Open-source software allows telecom operators to customize and adapt solutions to their specific needs, without being constrained by vendor limitations. This flexibility enables them to respond quickly to changing market demands and technological advancements.</li>
+<li>Reduced Costs: Open-source software often comes with lower licensing fees or is entirely free to use, significantly reducing the capital expenditure (CAPEX) associated with software procurement. This cost-effectiveness is particularly important for telecom operators facing increasing cost pressures.</li>
+<li>Enhanced Interoperability: Open-source software promotes interoperability among different vendors and technologies, breaking down barriers to communication and enabling seamless integration of network components. This interoperability is crucial for building next-generation networks that can support diverse applications and services.</li>
+<li>Fostering Innovation: Open-source development fosters a collaborative environment where developers from different organizations can contribute to the improvement of software solutions. This collective effort accelerates innovation and leads to the creation of more advanced and feature-rich solutions.</li>
+<li>Strengthening Security: Open-source software undergoes rigorous community scrutiny, which helps identify and fix vulnerabilities quickly. This transparency enhances the overall security of open-source software solutions.</li>
+</ul>
+<h2 id="using-git-and-github">Using Git and Github</h2>
+<h2 id="setting-up-your-dev-environment-using-a-vm">Setting up your dev environment using a VM</h2>
+<p>The purpose of this VM will be to serve as your development machine which you can use to work on your projects. As this is consistent for everyone in the project, we are going to use the same version of operating system as a virtual machine.</p>
+<ol>
+<li>Download and install softwares using Chocolatey</li>
+<li>Download and install VirtualBox</li>
+<li>Download the <a href="https://ubuntu.com/download/desktop/thank-you?version=22.04.3&amp;architecture=amd64">Ubuntu ISO Image</a></li>
+<li>Install the virtual machine using VirtualBox</li>
+<li>Start the virtual machine</li>
+<li>Login to the VM</li>
+</ol></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+                <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/yaml.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
